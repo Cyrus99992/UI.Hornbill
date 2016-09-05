@@ -1,3 +1,6 @@
-TODO
+/TODO
 *.zip
-/test/
+tst/
+tmp/
+bin/
+logs/
