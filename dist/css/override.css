@@ -1,0 +1,17 @@
+/*
+ * Core: Override Layout Style
+ * -------------------------
+ */
+ 
+body {
+  font-family: 'Helvetica Neue', Helvetica, 'Microsoft YaHei UI Light', sans-serif;
+}
+
+.main-header .logo {
+	position: fixed;
+	font-family: 'Bauhaus 93', Impact, 'Helvetica Neue', Helvetica, 'Microsoft YaHei UI Light', sans-serif;
+}
+
+.main-sidebar {
+	position: fixed;
+}
