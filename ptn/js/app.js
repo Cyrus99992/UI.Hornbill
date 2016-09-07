@@ -1,34 +1,34 @@
-/*! Patron app.js
+/*! Hornbill app.js
  * ================
- * Main JS application file for Patron. This file
+ * Main JS application file for Hornbill. This file
  * should be included in all pages. It controls some layout
- * options and implements exclusive Patron plugins.
+ * options and implements exclusive Hornbill plugins.
  */
 
 'use strict';
 
 //Make sure jQuery has been loaded before app.js
 if (typeof jQuery === "undefined") {
-  throw new Error("Patron requires jQuery");
+  throw new Error("Hornbill requires jQuery");
 }
 
-/* Patron
+/* Hornbill
  *
  * @type Object
- * @description $.Patron is the main object for the template's app.
+ * @description $.hornbill is the main object for the template's app.
  *              It's used for implementing functions and options related
  *              to the template. Keeping everything wrapped in an object
  *              prevents conflict with other plugins and is a better
  *              way to organize our code.
  */
-$.Patron = {};
+$.hornbill = {};
 
 /* --------------------
- * - Patron Options -
+ * - Hornbill Options -
  * --------------------
  * Modify these options to suit your implementation
  */
-$.Patron.options = {
+$.hornbill.options = {
   //Add slimscroll to navbar menus
   //This requires you to load the slimscroll plugin
   //in every page before app.js
@@ -49,7 +49,7 @@ $.Patron.options = {
   //Enable Fast Click. Fastclick.js creates a more
   //native touch experience with touch devices. If you
   //choose to enable the plugin, make sure you load the script
-  //before Patron's app.js
+  //before Hornbill's app.js
   enableFastclick: true,
   //Control Sidebar Options
   enableControlSidebar: true,
@@ -121,26 +121,26 @@ $.Patron.options = {
 /* ------------------
  * - Implementation -
  * ------------------
- * The next block of code implements Patron's
+ * The next block of code implements Hornbill's
  * functions and plugins as specified by the
  * options above.
  */
 $(function () {
   //Easy access to options
-  var o = $.Patron.options;
+  var o = $.hornbill.options;
 
   //Set up the object
   _init();
 
   //Activate the layout maker
-  $.Patron.layout.activate();
+  $.hornbill.layout.activate();
 
   //Enable sidebar tree view controls
-  $.Patron.tree('.sidebar');
+  $.hornbill.tree('.sidebar');
 
   //Enable control sidebar
   if (o.enableControlSidebar) {
-    $.Patron.controlSidebar.activate();
+    $.hornbill.controlSidebar.activate();
   }
 
   //Add slimscroll to navbar dropdown
@@ -154,7 +154,7 @@ $(function () {
 
   //Activate sidebar push menu
   if (o.sidebarPushMenu) {
-    $.Patron.pushMenu(o.sidebarToggleSelector);
+    $.hornbill.pushMenu(o.sidebarToggleSelector);
   }
 
   //Activate Bootstrap tooltip
@@ -164,7 +164,7 @@ $(function () {
 
   //Activate box widget
   if (o.enableBoxWidget) {
-    $.Patron.boxWidget.activate();
+    $.hornbill.boxWidget.activate();
   }
 
   //Activate fast click
@@ -196,9 +196,9 @@ $(function () {
 });
 
 /* ----------------------------------
- * - Initialize the Patron Object -
+ * - Initialize the Hornbill Object -
  * ----------------------------------
- * All Patron functions are implemented below.
+ * All Hornbill functions are implemented below.
  */
 function _init() {
 
@@ -207,11 +207,11 @@ function _init() {
    * Fixes the layout height in case min-height fails.
    *
    * @type Object
-   * @usage $.Patron.layout.activate()
-   *        $.Patron.layout.fix()
-   *        $.Patron.layout.fixSidebar()
+   * @usage $.hornbill.layout.activate()
+   *        $.hornbill.layout.fix()
+   *        $.hornbill.layout.fixSidebar()
    */
-  $.Patron.layout = {
+  $.hornbill.layout = {
     activate: function () {
       var _this = this;
       _this.fix();
@@ -223,19 +223,33 @@ function _init() {
     },
     fix: function () {
       //Get window height and the wrapper height
-      var neg = $('.main-header').outerHeight() + $('.main-footer').outerHeight();
+      var neg = $('.main-header').outerHeight();// + $('.main-footer').outerHeight();
       var window_height = $(window).height();
-      var sidebar_height = $(".sidebar").height();
+      var sidebar_height = $(".sidebar").height() + 10;
       //Set the min-height of the content and sidebar based on the
       //the height of the document.
       if ($("body").hasClass("fixed")) {
         $(".content-wrapper, .right-side").css('min-height', window_height - $('.main-footer').outerHeight());
       } else {
+				//Set content min-height not fixed. By cyrus.
+				var content_height = window_height - neg;
+				if ($(window).width() > 750) {
+					if ($(".content-wrapper").height() < sidebar_height) {
+						content_height = sidebar_height;
+					}
+				}
+				$(".content-wrapper").css('min-height', content_height);
+				
+				$("#sz-hd").html("HEADER:"+ $(window).width());
+				$("#sz-win").html("WIN:"+ window_height);
+				$("#sz-bar").html("BAR:"+ sidebar_height);
+				$("#sz-con").html("CON:"+ $(".content-wrapper").height());
+				/*
         if (window_height >= sidebar_height) {
-          $(".content-wrapper, .right-side").css('min-height', window_height - neg);
+          $(".content, .right-side").css('min-height', window_height - neg);
         } else {
-          $(".content-wrapper, .right-side").css('min-height', sidebar_height);
-        }
+          $(".content, .right-side").css('min-height', sidebar_height);
+        }*/
       }
     },
     fixSidebar: function () {
@@ -249,7 +263,7 @@ function _init() {
         console.error("Error: the fixed layout requires the slimscroll plugin!");
       }
       //Enable slimscroll for fixed layout
-      if ($.Patron.options.sidebarSlimScroll) {
+      if ($.hornbill.options.sidebarSlimScroll) {
         if (typeof $.fn.slimScroll != 'undefined') {
           //Distroy if it exists
           $(".sidebar").slimScroll({destroy: true}).height("auto");
@@ -269,9 +283,9 @@ function _init() {
    * Adds the push menu functionality to the sidebar.
    *
    * @type Function
-   * @usage: $.Patron.pushMenu("[data-toggle='offcanvas']")
+   * @usage: $.hornbill.pushMenu("[data-toggle='offcanvas']")
    */
-  $.Patron.pushMenu = function (toggleBtn) {
+  $.hornbill.pushMenu = function (toggleBtn) {
     //Get the screen sizes
     var screenSizes = this.options.screenSizes;
 
@@ -309,9 +323,9 @@ function _init() {
    * tree view menu.
    *
    * @type Function
-   * @Usage: $.Patron.tree('.sidebar')
+   * @Usage: $.hornbill.tree('.sidebar')
    */
-  $.Patron.tree = function (menu) {
+  $.hornbill.tree = function (menu) {
     var _this = this;
 
     $("li a", $(menu)).on('click', function (e) {
@@ -362,15 +376,15 @@ function _init() {
    * Adds functionality to the right sidebar
    *
    * @type Object
-   * @usage $.Patron.controlSidebar.activate(options)
+   * @usage $.hornbill.controlSidebar.activate(options)
    */
-  $.Patron.controlSidebar = {
+  $.hornbill.controlSidebar = {
     //instantiate the object
     activate: function () {
       //Get the object
       var _this = this;
       //Update options
-      var o = $.Patron.options.controlSidebarOptions;
+      var o = $.hornbill.options.controlSidebarOptions;
       //Get the sidebar
       var sidebar = $(o.selector);
       //The toggle button
@@ -433,12 +447,12 @@ function _init() {
    * removing boxes from the screen.
    *
    * @type Object
-   * @usage $.Patron.boxWidget.activate()
-   *        Set all of your option in the main $.Patron.options object
+   * @usage $.hornbill.boxWidget.activate()
+   *        Set all of your option in the main $.hornbill.options object
    */
-  $.Patron.boxWidget = {
-    selectors: $.Patron.options.boxWidgetOptions.boxWidgetSelectors,
-    icons: $.Patron.options.boxWidgetOptions.boxWidgetIcons,
+  $.hornbill.boxWidget = {
+    selectors: $.hornbill.options.boxWidgetOptions.boxWidgetSelectors,
+    icons: $.hornbill.options.boxWidgetOptions.boxWidgetIcons,
     activate: function () {
       var _this = this;
       //Listen for collapse event triggers
