@@ -34,7 +34,7 @@ $.hornbill.options = {
   //in every page before app.js
   navbarMenuSlimscroll: true,
   navbarMenuSlimscrollWidth: "3px", //The width of the scroll bar
-  navbarMenuHeight: "200px", //The height of the inner menu
+  navbarMenuHeight: "220px", //The height of the inner menu
   //Sidebar push menu toggle button selector
   sidebarToggleSelector: "[data-toggle='offcanvas']",
   //Activate sidebar push menu
@@ -52,7 +52,7 @@ $.hornbill.options = {
   //before Hornbill's app.js
   enableFastclick: true,
   //Control Sidebar Options
-  enableControlSidebar: true,
+  enableControlSidebar: false,
   controlSidebarOptions: {
     //Which button should trigger the open/close event
     toggleBtnSelector: "[data-toggle='control-sidebar']",
@@ -223,33 +223,23 @@ function _init() {
     },
     fix: function () {
       //Get window height and the wrapper height
-      var neg = $('.main-header').outerHeight();// + $('.main-footer').outerHeight();
+      //var neg = $('.main-header').outerHeight() + $('.main-footer').outerHeight();
       var window_height = $(window).height();
-      var sidebar_height = $(".sidebar").height() + 10;
+      var sidebar_height = $(".main-sidebar").height();
+			var header_height = $('.main-header').outerHeight();
       //Set the min-height of the content and sidebar based on the
       //the height of the document.
       if ($("body").hasClass("fixed")) {
-        $(".content-wrapper, .right-side").css('min-height', window_height - $('.main-footer').outerHeight());
+        $(".content-wrapper").css('min-height', window_height);
       } else {
 				//Set content min-height not fixed. By cyrus.
-				var content_height = window_height - neg;
-				if ($(window).width() > 750) {
-					if ($(".content-wrapper").height() < sidebar_height) {
-						content_height = sidebar_height;
-					}
+				var content_height = sidebar_height;
+				var resize_height = window_height - header_height;
+				if (resize_height > sidebar_height) {
+					//winodws larger then sidebar.
+					content_height = resize_height;
 				}
 				$(".content-wrapper").css('min-height', content_height);
-				
-				$("#sz-hd").html("HEADER:"+ $(window).width());
-				$("#sz-win").html("WIN:"+ window_height);
-				$("#sz-bar").html("BAR:"+ sidebar_height);
-				$("#sz-con").html("CON:"+ $(".content-wrapper").height());
-				/*
-        if (window_height >= sidebar_height) {
-          $(".content, .right-side").css('min-height', window_height - neg);
-        } else {
-          $(".content, .right-side").css('min-height', sidebar_height);
-        }*/
       }
     },
     fixSidebar: function () {

@@ -1,6 +1,5 @@
-/TODO
 *.zip
-tst/
-tmp/
+node_modules/
 bin/
 logs/
+tmp/
