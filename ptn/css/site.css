@@ -6,6 +6,7 @@
 body {
 	font-family: 'Helvetica Neue', Helvetica, 'Microsoft YaHei UI Light', sans-serif;
 	font-weight: 360;
+	font-size: 15px;
 }
 h1,h2,h3,h4,h5,h6 {
 	font-family: 'Helvetica Neue', Helvetica, 'Microsoft YaHei UI Light', sans-serif;
@@ -20,8 +21,25 @@ h1,h2,h3,h4,h5,h6 {
 	margin-left: 0;
 }
 
-.todo-list>li .text {
+.content-header > .breadcrumb {
+	font-size: 13px;
+}
+.todo-list > li .text {
 	font-weight: 300;
+}
+
+.user-profile {
+	margin-bottom: 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: center;
+	border-bottom: 1px solid rgba(244, 244, 244, 0.48);
+}
+.user-profile > img {
+	margin-bottom: 6px;
+  height: 128px;
+  width: 128px;
+  border: 3px solid;
 }
 
 #calendar {
