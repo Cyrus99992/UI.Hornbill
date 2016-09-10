@@ -7,7 +7,7 @@
 <link href="../../ptn/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <link href="../../ptn/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 <link href="../../ptn/css/app.min.css" rel="stylesheet" type="text/css" />
-<link href="http://cdn.bootcss.com/bootstrap-switch/3.3.2/css/bootstrap3/bootstrap-switch.min.css" rel="stylesheet">
+<link href="../../ptn/libs/switch/switch.css" rel="stylesheet" type="text/css" />
 <link href="../../ptn/css/login.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -15,7 +15,9 @@
 <div id="login-page" class="login-page">
 	<canvas id="login-canvas"></canvas>
 	<div class="login-box">
-		<div class="login-logo"> <img src="../../ptn/img/logo-login.png" class="img-circle" /> <a href="../layout.html"><span class="login-title">Hornbill</span></a> </div>
+		<div class="login-logo">
+			<img src="../../ptn/img/logo-login.png" class="img-circle" /> <a href="../layout.html"><span class="login-title">Hornbill</span></a>
+		</div>
 		<!-- /.login-logo -->
 		<div class="login-box-body">
 			<p class="login-box-msg">请输入用户名和口令登录系统</p>
@@ -31,16 +33,24 @@
 				<div class="form-group has-feedback">
 					<button type="submit" class="btn btn-primary btn-block btn-flat"><i class="fa fa-sign-in"></i> 登录</button>
 				</div>
-				<input type="checkbox" data-size="mini" /><span> 记住我的登录信息</span>
+				<div class="form-group ">
+					<input type="checkbox" class="form-switch" id="swt33" />
+					<span>&nbsp;记住我的登录信息</span>
+				</div>
 			</form>
-			<div class="dashedline"></div>
-			<div class="pull-left"> <a href="#"><i class="fa fa-key"></i> 忘记口令</a> </div>
-			<div class="pull-right"> <a href="register.html" class="text-center"><i class="fa fa-star-o"></i> 注册用户</a> </div>
+			<div class="dashedline">
+			</div>
+			<div class="pull-left">
+				<a href="#"><i class="fa fa-key"></i> 忘记口令</a>
+			</div>
+			<div class="pull-right">
+				<a href="register.html" class="text-center"><i class="fa fa-star-o"></i> 注册用户</a>
+			</div>
 			<br>
 		</div>
-		<!-- /.login-box-body --> 
+		<!-- /.login-box-body -->
 	</div>
-	<!-- /.login-box --> 
+	<!-- /.login-box -->
 </div>
 <!-- /.login-page --> 
 <!-- js --> 
@@ -49,10 +59,22 @@
 <script src="../../ptn/js/login/TweenLite.min.js"></script> 
 <script src="../../ptn/js/login/EasePack.min.js"></script> 
 <script src="../../ptn/js/login/rAF.js"></script> 
-<script src="../../ptn/js/login/loginPage.js"></script> 
-<script src="http://cdn.bootcss.com/bootstrap-switch/3.3.2/js/bootstrap-switch.min.js"></script> 
+<script src="../../ptn/js/login/login.js"></script> 
+<script src="../../ptn/libs/switch/switch.js"></script> 
 <script>
-		$("input[type=\"checkbox\"]").not("[data-switch-no-init]").bootstrapSwitch();
+
+		var switches = {};
+    var switchConfig = {
+			'form-switch': { 
+				size: 'small',
+				onSwitchColor: '#3c8dbc',
+				offSwitchColor: '#eee'
+			}
+		};
+		Object.keys(switchConfig).forEach(function (key) {
+        switches[key] = new Switch(document.querySelector('.' + key), switchConfig[key]);
+    });
+
 </script>
 </body>
 </html>

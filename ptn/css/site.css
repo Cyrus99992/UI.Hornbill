@@ -6,7 +6,6 @@
 body {
 	font-family: 'Helvetica Neue', Helvetica, 'Microsoft YaHei UI Light', sans-serif;
 	font-weight: 360;
-	font-size: 15px;
 }
 h1,h2,h3,h4,h5,h6 {
 	font-family: 'Helvetica Neue', Helvetica, 'Microsoft YaHei UI Light', sans-serif;
@@ -20,7 +19,9 @@ h1,h2,h3,h4,h5,h6 {
 .main-footer {
 	margin-left: 0;
 }
-
+.form-box {
+	padding: 10px 20px;
+}
 .content-header > .breadcrumb {
 	font-size: 13px;
 }
