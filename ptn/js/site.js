@@ -1,10 +1,8 @@
 /**
- * Patron Demo Menu
+ * Hornbill custom js
  * ------------------
- * You should not use this file in production.
- * This file is for demo purposes only.
  */
-(function ($, Patron) {
+(function ($, Hornbill) {
 
   /**
    * List of all the available skins
@@ -20,64 +18,6 @@
     "skin-green"
   ];
 
-  //Create the new tab
-  var tab_pane = $("<div />", {
-    "id": "control-sidebar-theme-demo-options-tab",
-    "class": "tab-pane"
-  });
-
-  //Create the tab button
-  var tab_button = $("<li />")
-          .html("<a href='#control-sidebar-theme-demo-options-tab' data-toggle='tab'>"
-                  + "<i class='fa fa-wrench'></i>"
-                  + "</a>");
-
-  //Add the tab button to the right sidebar tabs
-  $("[href='#control-sidebar-home-tab']")
-          .parent()
-          .before(tab_button);
-
-  //Create the menu
-  var demo_settings = $("<div />");
-
-  //Layout options
-  demo_settings.append(
-          "<h4 class='control-sidebar-heading'>"
-          + "Layout Options"
-          + "</h4>"
-          //Fixed layout
-          + "<div class='form-group'>"
-          + "<label class='control-sidebar-subheading'>"
-          + "<input type='checkbox' data-layout='fixed' class='pull-right'/> "
-          + "Fixed layout"
-          + "</label>"
-          + "<p>Activate the fixed layout. You can't use fixed and boxed layouts together</p>"
-          + "</div>"
-          //Boxed layout
-          + "<div class='form-group'>"
-          + "<label class='control-sidebar-subheading'>"
-          + "<input type='checkbox' data-layout='layout-boxed'class='pull-right'/> "
-          + "Boxed Layout"
-          + "</label>"
-          + "<p>Activate the boxed layout</p>"
-          + "</div>"
-          //Sidebar Toggle
-          + "<div class='form-group'>"
-          + "<label class='control-sidebar-subheading'>"
-          + "<input type='checkbox' data-layout='sidebar-collapse' class='pull-right'/> "
-          + "Toggle Sidebar"
-          + "</label>"
-          + "<p>Toggle the left sidebar's state (open or collapse)</p>"
-          + "</div>"
-          //Control Sidebar Toggle
-          + "<div class='form-group'>"
-          + "<label class='control-sidebar-subheading'>"
-          + "<input type='checkbox' data-controlsidebar='control-sidebar-open' class='pull-right'/> "
-          + "Toggle Right Sidebar Slide"
-          + "</label>"
-          + "<p>Toggles between slide over content and push content effects.</p>"
-          + "</div>"
-          );
   var skins_list = $("<ul />", {"class": 'list-unstyled clearfix'});
 
   //Dark sidebar skins
@@ -130,27 +70,7 @@
                   + "<p class='text-center no-margin'>Yellow</p>");
   skins_list.append(skin_yellow);
 
-  demo_settings.append("<h4 class='control-sidebar-heading'>Skins</h4>");
-  demo_settings.append(skins_list);
-
-  tab_pane.append(demo_settings);
-  $("#control-sidebar-settings-tab").before(tab_pane);
-
-  setup();
-
-  /**
-   * Toggles layout classes
-   * 
-   * @param String cls the layout class to toggle
-   * @returns void
-   */
-  function change_layout(cls) {
-    $("body").toggleClass(cls);
-    Patron.layout.fixSidebar();
-    //Fix the problem with right sidebar and layout boxed
-    if(cls == "layout-boxed")
-      Patron.controlSidebar._fix($(".control-sidebar-bg"));
-  }
+  //setup();
 
   /**
    * Replaces the old skin with the new skin
@@ -216,13 +136,20 @@
     $("[data-layout]").on('click', function () {
       change_layout($(this).data('layout'));
     });
-
-    $("[data-controlsidebar]").on('click', function () {
-      change_layout($(this).data('controlsidebar'));
-      var slide = !Patron.options.controlSidebarOptions.slide;
-      Patron.options.controlSidebarOptions.slide = slide;
-      if (!slide)
-        $('.control-sidebar').removeClass('control-sidebar-open');
-    });
   }
-})(jQuery, $.Patron);
+	
+	function setDataTables() {
+        $('.table').dataTable({
+					"language": {
+						"search": "结果内查找",
+						"lengthMenu": "每页 _MENU_ 条记录",
+						 "zeroRecords": "没有找到记录",
+						 "info": "第 _PAGE_ 页 ( 共 _PAGES_ 页 )",
+						 "infoEmpty": "无记录",
+						 "infoFiltered": "(从 _MAX_ 条记录过滤)"
+             }
+				});
+	}
+	//setDataTables();
+	
+})(jQuery, $.Hornbill);
