@@ -39,15 +39,45 @@ input.form-control {
 	border-bottom: 1px dashed #ddd;
 }
 
-.lockon-page {
-  
+.lockon-wrapper {
+  min-height: 460px;
+  position: absolute;
+  overflow: hidden;
+  display: table;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.lockon-box {
+	font-family: 'Helvetica Neue', Helvetica, 'Microsoft YaHei UI', sans-serif;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-font-smoothing: auto;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  perspective: 1000px;
+}
+.lockon-cell {
+	padding-top: 10%;
+  display: table-cell;
+}
+.lockon-name {
+  text-align: center;
+  font-weight: 600;
 }
 .lockon-scene {
   position: relative;
   overflow: hidden;
 }
-.lockon-scene,
-.layer {
+.lockon-scene, .layer {
   display: block;
   height: 100%;
   width: 100%;

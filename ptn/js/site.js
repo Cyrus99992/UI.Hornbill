@@ -137,19 +137,38 @@
       change_layout($(this).data('layout'));
     });
   }
-	
+
+  /**
+   * Set tables to datatables.js
+   * 
+   */
 	function setDataTables() {
         $('.table').dataTable({
 					"language": {
-						"search": "结果内查找",
-						"lengthMenu": "每页 _MENU_ 条记录",
-						 "zeroRecords": "没有找到记录",
-						 "info": "第 _PAGE_ 页 ( 共 _PAGES_ 页 )",
-						 "infoEmpty": "无记录",
-						 "infoFiltered": "(从 _MAX_ 条记录过滤)"
-             }
+						"emptyTable":		"无数据",
+						"loadingRecords": "数据载入中...",
+						"processing":		"数据处理中...",
+						"search":				"结果内过滤",
+						"lengthMenu":		"每页 _MENU_ 条记录",
+						"zeroRecords":	"没有匹配到符合条件的数据",
+						"info":					"第 _PAGE_ 页 ( 共 _PAGES_ 页 )",
+						"infoEmpty":		"无数据",
+						"infoFiltered":	"(从 _MAX_ 条记录过滤)",
+						"thousands":		",",
+						"paginate": {
+							"first":      "首页",
+							"last":       "尾页",
+							"next":       "下一页",
+							"previous":   "上一页"
+						}
+					}
 				});
 	}
-	//setDataTables();
-	
+	setDataTables();
+
+  /**
+   * Set tables to datatables.js
+   * 
+   */
+
 })(jQuery, $.Hornbill);
