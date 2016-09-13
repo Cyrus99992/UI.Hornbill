@@ -1,29 +1,28 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<title>Horbill | Template</title>
+<meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'>
-<!-- Theme style -->
-<link rel="stylesheet" type="text/css" href="../../ptn/css/bootstrap.min.css" />
-<link rel="stylesheet" type="text/css" href="../../ptn/css/font-awesome.min.css" />
-<link rel="stylesheet" type="text/css" href="../../ptn/css/app.min.css" />
-<link rel="stylesheet" type="text/css" href="../../ptn/css/skins/skins.min.css" />
-<link rel="stylesheet" type="text/css" href="../../ptn/css/site.css" />
+<!-- TemplateBeginEditable name="RegionDoctitle" -->
+<title>Horbill | Template</title>
+<link rel="stylesheet" type="text/css" href="../ptn/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="../ptn/css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="../ptn/css/app.min.css" />
+<link rel="stylesheet" type="text/css" href="../ptn/css/skins/skins.min.css" />
+<link rel="stylesheet" type="text/css" href="../ptn/css/site.css" />
+<!-- TemplateEndEditable -->
 </head>
 
 <body class="skin-blue sidebar-mini">
-<!-- Site wrapper -->
+<!-- Site wrapper ==================================== -->
 <div class="wrapper">
-	<!-- Header content -->
 	<header class="main-header">
 		<!-- Logo --> 
-		<a href="../layout.html" class="logo"> 
-			<!-- mini logo for sidebar mini 50x50 pixels --> 
+		<a href="../views/layout.html" class="logo"> 
 			<span class="logo-mini"><i class="fa fa-home"></i></span> 
-			<!-- logo for regular state and mobile devices --> 
-			<span class="logo-lg">Hornbill</span> </a> 
+			<span class="logo-lg">Hornbill</span>
+		</a> 
 		<!-- Header Navbar -->
 		<nav class="navbar navbar-static-top" role="navigation"> 
 			<!-- Sidebar toggle button--> 
@@ -37,29 +36,34 @@
 							<li> 
 								<!-- inner menu: contains the actual data -->
 								<ul class="menu">
-									<li><!-- start message --> 
+									<li>
 										<a href="#">
 											<div class="pull-left">
-												<img src="../../ptn/img/user2-160x160.jpg" class="img-circle" alt="User Image"/>
+												<img src="../ptn/img/user2-160x160.jpg" class="img-circle" alt="User Image"/>
 											</div>
 											<h4> 技术支持团队 <small><i class="fa fa-clock-o"></i> 5 mins</small> </h4>
 											<p>你觉得Hornbill前端设计有哪些问题？</p>
-										</a> </li>
+										</a>
+									</li>
 									<!-- end message -->
-									<li> <a href="#">
+									<li>
+										<a href="#">
 											<div class="pull-left">
-												<img src="../../ptn/img/user1-128x128.jpg" class="img-circle" alt="user image"/>
+												<img src="../ptn/img/user1-128x128.jpg" class="img-circle" alt="user image"/>
 											</div>
 											<h4> 前端设计师 <small><i class="fa fa-clock-o"></i> 2 hours</small> </h4>
 											<p>你对前端UI提出的改进意见回复</p>
-										</a> </li>
-									<li> <a href="#">
+										</a>
+									</li>
+									<li>
+										<a href="#">
 											<div class="pull-left">
-												<img src="../../ptn/img/user8-128x128.jpg" class="img-circle" alt="user image"/>
+												<img src="../ptn/img/user8-128x128.jpg" class="img-circle" alt="user image"/>
 											</div>
 											<h4> 设计师Cyrus <small><i class="fa fa-clock-o"></i> Today</small> </h4>
 											<p>服务端设计任务正在进行中...</p>
-										</a> </li>
+										</a>
+									</li>
 								</ul>
 							</li>
 							<li class="footer"><a href="#">查看所有历史消息</a> </li>
@@ -135,10 +139,10 @@
 						</ul>
 					</li>
 					<!-- User Account -->
-					<li class="dropdown user user-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <img src="../../ptn/img/user2-160x160.jpg" class="user-image" alt="User Image"/> <span class="hidden-xs">Jason Bourne</span> </a>
+					<li class="dropdown user user-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <img src="../ptn/img/user2-160x160.jpg" class="user-image" alt="User Image"/> <span class="hidden-xs">Jason Bourne</span> </a>
 						<ul class="dropdown-menu">
 							<!-- User image -->
-							<li class="user-header"> <img src="../../ptn/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+							<li class="user-header"> <img src="../ptn/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
 								<p> Jason Bourne - 总设计师 <small>2016年9月完工效果</small> </p>
 							</li>
 							<!-- Menu Body -->
@@ -156,30 +160,30 @@
 							<!-- Menu Footer-->
 							<li class="user-footer">
 								<div class="pull-left">
-									<a href="../account/profile.html" class="btn btn-default btn-flat"><i class="fa fa-cog" aria-hidden="true"></i> 设置</a>
+									<a href="../views/account/profile.html" class="btn btn-default btn-flat"><i class="fa fa-cog" aria-hidden="true"></i> 设置</a>
 								</div>
 								<div class="pull-right">
-									<a href="../account/login.html" class="btn btn-default btn-flat"><i class="fa fa-sign-out" aria-hidden="true"></i> 注销</a>
+									<a href="../views/account/login.html" class="btn btn-default btn-flat"><i class="fa fa-sign-out" aria-hidden="true"></i> 注销</a>
 								</div>
 							</li>
 						</ul>
 					</li>
 					<!-- Lockon Button -->
-					<li><a href="../account/lockon.html"><i class="fa fa-power-off"></i></a></li>
+					<li><a href="../views/account/lockon.html"><i class="fa fa-power-off"></i></a></li>
 				</ul>
 			</div>
 		</nav>
 	</header>
-	
-	<!-- =============================================== --> 
-	<!-- Left side column. -->
+
+	<!-- =============================================== -->
+	<!-- Left side content -->
 	<aside class="main-sidebar"> 
 		<!-- sidebar -->
 		<section class="sidebar">
 			<!-- Sidebar user panel -->
 			<div class="user-panel">
 				<div class="pull-left image">
-					<img src="../../ptn/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+					<img src="../ptn/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
 				</div>
 				<div class="pull-left info">
 					<p>Jason Bourne</p>
@@ -206,12 +210,12 @@
 						<li><a href="#"><i class="fa fa-caret-square-o-right"></i> 每周报告</a> </li>
 					</ul>
 				</li>
-				<li> <a href="../query/inventory.html"> <i class="fa fa-cubes"></i> <span> 库存查询</span> <small class="label pull-right bg-green">new</small> </a> </li>
-				<li> <a href="../query/guidance.html"> <i class="fa fa-cc"></i> <span> 指导价查询</span> <small class="label pull-right bg-green">new</small> </a> </li>
+				<li> <a href="../views/query/inventory.html"> <i class="fa fa-cubes"></i> <span> 库存查询</span> <small class="label pull-right bg-green">new</small> </a> </li>
+				<li> <a href="../views/query/guidance.html"> <i class="fa fa-cc"></i> <span> 指导价查询</span> <small class="label pull-right bg-green">new</small> </a> </li>
 				<li class="treeview"> <a href="#"> <i class="fa fa-users"></i> <span> 客户档案</span><i class="fa fa-angle-left pull-right"></i> </a>
 					<ul class="treeview-menu">
-						<li><a href="../customer/custprofile.html"><i class="fa fa-caret-square-o-right"></i> 我的客户</a> </li>
-						<li><a href="../customer/custprofile.html"><i class="fa fa-caret-square-o-right"></i> 团队客户</a> </li>
+						<li><a href="../views/customer/custprofile.html"><i class="fa fa-caret-square-o-right"></i> 我的客户</a> </li>
+						<li><a href="../views/customer/custprofile.html"><i class="fa fa-caret-square-o-right"></i> 团队客户</a> </li>
 						<li><a href="#"><i class="fa fa-caret-square-o-right"></i> 客户导入</a> </li>
 					</ul>
 				</li>
@@ -231,7 +235,7 @@
 						<li><a href="#"><i class="fa fa-caret-square-o-right"></i> 用户管理</a> </li>
 					</ul>
 				</li>
-				<li><a href="../setting/blank.html"><i class="fa fa-question-circle-o"></i> <span> 使用帮助</span></a> </li>
+				<li><a href="../views/setting/blank.html"><i class="fa fa-question-circle-o"></i> <span> 使用帮助</span></a> </li>
 				<li class="header">快速链接</li>
 				<li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>公司网站</span></a> </li>
 				<li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>流程系统</span></a> </li>
@@ -240,24 +244,22 @@
 		</section>
 		<!-- /.sidebar --> 
 	</aside>
-	
+
 	<!-- =============================================== --> 
 	<!-- Content Wrapper. Contains page content -->
 	<div class="content-wrapper">
-		<!-- Content Header (Page header) -->
 		<section class="content-header">
+		<!-- TemplateBeginEditable name="RegionContentHeader" -->
 			<h1> 空模板页 <small>用于继承的空模板页</small> </h1>
 			<ol class="breadcrumb">
-				<li><a href="#"><i class="fa fa-home"></i> Home</a> </li>
-				<li><a href="#">使用帮助</a> </li>
-				<li class="active">空模板页</li>
+				<li><a href="../views/layout.html"><i class="fa fa-home"></i> Home</a> </li>
+				<li><a href="../views/demo/demo.html"> 示例索引</a> </li>
+				<li class="active"> 空模板页</li>
 			</ol>
+		<!-- TemplateEndEditable -->
 		</section>
-		
-		<!-- Main content -->
 		<section class="content">
-			
-			<!-- Default box -->
+		<!-- TemplateBeginEditable name="RegionContent" -->
 			<div class="box">
 				<div class="box-header with-border">
 					<h3 class="box-title">页标题</h3>
@@ -277,123 +279,25 @@
 				<div class="box-footer">
 					功能和标注
 				</div>
-				<!-- /.box-footer-->
 			</div>
-			<!-- /.box --> 
-			
-			<!-- =========================================================== -->
+			<!-- =========================================== -->
 			
 			<div class="row">
-				<div class="col-md-3 col-sm-6 col-xs-12">
-					<div class="info-box bg-aqua">
-						<span class="info-box-icon"><i class="fa fa-bookmark-o"></i></span>
-						<div class="info-box-content">
-							<span class="info-box-text">页签模板</span> <span class="info-box-number"><a href="blankTabs.html">blankTabs</a> </span>
-							<div class="progress">
-								<div class="progress-bar" style="width: 80%">
-								</div>
-							</div>
-							<span class="progress-description"> 80% 完成度 </span>
-						</div>
-						<!-- /.info-box-content -->
-					</div>
-					<!-- /.info-box -->
-				</div>
-				<!-- /.col -->
-				<div class="col-md-3 col-sm-6 col-xs-12">
-					<div class="box box-warning box-solid">
-						<div class="box-header with-border">
-							<h3 class="box-title">可折叠box</h3>
-							<div class="box-tools pull-right">
-								<button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-							</div>
-							<!-- /.box-tools -->
-						</div>
-						<!-- /.box-header -->
-						<div class="box-body">
-							The body of the box.The body of the box.The body of the box.The body of the box.The body of the box.
-						</div>
-						<!-- /.box-body --> 
-						<!-- Loading (remove the following to stop the loading)-->
-						<div class="overlay">
-							<i class="fa fa-refresh fa-spin"></i>
-						</div>
-						<!-- end loading -->
-					</div>
-					<!-- /.box -->
-				</div>
-				<!-- /.col -->
-				<div class="col-md-3 col-sm-6 col-xs-12">
-					<div class="box box-danger box-solid">
-						<div class="box-header">
-							<h3 class="box-title">载入中box</h3>
-						</div>
-						<div class="box-body">
-							载入中...
-						</div>
-						<!-- /.box-body --> 
-						<!-- Loading (remove the following to stop the loading)-->
-						<div class="overlay">
-							<i class="fa fa-refresh fa-spin"></i>
-						</div>
-						<!-- end loading -->
-					</div>
-					<!-- /.box -->
-				</div>
-				<!-- /.col -->
-				<div class="col-md-3 col-sm-6 col-xs-12">
-					<div class="box box-solid">
-						<div class="box-header with-border">
-							<h3 class="box-title">标签选择</h3>
-						</div>
-						<div class="box-body">
-							<div class="btn-group" style="width: 100%; margin-bottom: 10px;">
-								<!--<button type="button" id="color-chooser-btn" class="btn btn-info btn-block dropdown-toggle" data-toggle="dropdown">Color <span class="caret"></span></button>-->
-								<ul class="fc-color-picker" id="color-chooser">
-									<li><a class="text-aqua" href="#"><i class="fa fa-square"></i></a> </li>
-									<li><a class="text-blue" href="#"><i class="fa fa-square"></i></a> </li>
-									<li><a class="text-light-blue" href="#"><i class="fa fa-square"></i></a> </li>
-									<li><a class="text-teal" href="#"><i class="fa fa-square"></i></a> </li>
-									<li><a class="text-yellow" href="#"><i class="fa fa-square"></i></a> </li>
-									<li><a class="text-orange" href="#"><i class="fa fa-square"></i></a> </li>
-									<li><a class="text-green" href="#"><i class="fa fa-square"></i></a> </li>
-									<li><a class="text-lime" href="#"><i class="fa fa-square"></i></a> </li>
-									<li><a class="text-red" href="#"><i class="fa fa-square"></i></a> </li>
-									<li><a class="text-purple" href="#"><i class="fa fa-square"></i></a> </li>
-									<li><a class="text-fuchsia" href="#"><i class="fa fa-square"></i></a> </li>
-									<li><a class="text-muted" href="#"><i class="fa fa-square"></i></a> </li>
-									<li><a class="text-navy" href="#"><i class="fa fa-square"></i></a> </li>
-								</ul>
-							</div>
-							<!-- /btn-group -->
-							<div class="input-group">
-								<input id="new-event" type="text" class="form-control" placeholder="请输入标题">
-								<div class="input-group-btn">
-									<button id="add-new-event" type="button" class="btn btn-primary btn-flat">新建</button>
-								</div>
-								<!-- /btn-group -->
-							</div>
-							<!-- /input-group -->
-						</div>
-					</div>
-				</div>
-				<!-- /.col -->
-			</div>
-			<!-- /.row -->
 			
-		</section>
-		<!-- /.content -->
-	</div>
-	<!-- /.content-wrapper -->
-</div>
-<!-- ./wrapper --> 
+			</div>
 
-<!-- js include --> 
-<script src="../../ptn/js/jquery-3.1.0.min.js"></script> 
-<script src="../../ptn/js/jquery-ui.min.js"></script> 
-<script src="../../ptn/js/bootstrap.min.js"></script> 
-<script src="../../ptn/libs/slimScroll/jquery.slimscroll.min.js"></script> 
-<script src='../../ptn/libs/fastclick/fastclick.min.js'></script> 
-<script src="../../ptn/js/app.min.js"></script>
+		<!-- TemplateEndEditable -->
+		</section>
+	</div>
+</div>
+<!-- /Site wrapper =================================== -->
+<!-- TemplateBeginEditable name="RegionScripts" -->
+<script src="../ptn/js/jquery-3.1.0.min.js"></script> 
+<script src="../ptn/js/jquery-ui.min.js"></script> 
+<script src="../ptn/js/bootstrap.min.js"></script> 
+<script src="../ptn/libs/slimScroll/jquery.slimscroll.min.js"></script> 
+<script src='../ptn/libs/fastclick/fastclick.min.js'></script> 
+<script src="../ptn/js/app.min.js"></script>
+<!-- TemplateEndEditable -->
 </body>
 </html>
