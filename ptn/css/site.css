@@ -9,9 +9,11 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Helvetica Neue', Helvetica, 'Microsoft YaHei UI Light', sans-serif;
 }
+/*
 .main-header .logo {
 	font-family: 'Bauhaus 93', Impact, 'Helvetica Neue', Helvetica, 'Microsoft YaHei UI Light', sans-serif;
-}
+}*/
+
 .main-sidebar {
 	min-height: auto;
 }
@@ -49,3 +51,11 @@ h1, h2, h3, h4, h5, h6 {
 #calendar {
 	width: 100%;
 }
+
+/* modal form style addend */
+.modal-general {
+	color: #fff !important;
+	background-color: #012 !important;
+}
+
+

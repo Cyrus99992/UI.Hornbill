@@ -235,7 +235,7 @@
 						<li><a href="#"><i class="fa fa-caret-square-o-right"></i> 用户管理</a> </li>
 					</ul>
 				</li>
-				<li><a href="../views/setting/blank.html"><i class="fa fa-question-circle-o"></i> <span> 使用帮助</span></a> </li>
+				<li><a href="../views/demo/demo.html"><i class="fa fa-question-circle-o"></i> <span> 使用帮助</span></a> </li>
 				<li class="header">快速链接</li>
 				<li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>公司网站</span></a> </li>
 				<li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>流程系统</span></a> </li>
@@ -289,6 +289,10 @@
 		<!-- TemplateEndEditable -->
 		</section>
 	</div>
+	<!-- /Content wrapper ============================== -->
+	<!-- TemplateBeginEditable name="RegionFooter" -->
+	
+	<!-- TemplateEndEditable -->
 </div>
 <!-- /Site wrapper =================================== -->
 <!-- TemplateBeginEditable name="RegionScripts" -->
