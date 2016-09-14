@@ -9,8 +9,6 @@
 <title>Horbill | Template</title>
 <link rel="stylesheet" type="text/css" href="../../ptn/css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="../../ptn/css/font-awesome.min.css" />
-<link rel="stylesheet" type="text/css" href="../../ptn/libs/bootstrap-modal/css/bootstrap-modal-bs3patch.css">
-<link rel="stylesheet" type="text/css" href="../../ptn/libs/bootstrap-modal/css/bootstrap-modal.css">
 <link rel="stylesheet" type="text/css" href="../../ptn/css/app.min.css" />
 <link rel="stylesheet" type="text/css" href="../../ptn/css/skins/skins.min.css" />
 <link rel="stylesheet" type="text/css" href="../../ptn/css/site.css" />
@@ -253,100 +251,73 @@
 	<div class="content-wrapper">
 		<section class="content-header">
 		<!-- InstanceBeginEditable name="RegionContentHeader" -->
-			<h1> 模态窗体 <small>用于继承的空模板页</small> </h1>
+			<h1> 页签示例 <small>用于继承的空模板页</small> </h1>
 			<ol class="breadcrumb">
 				<li><a href="../layout.html"><i class="fa fa-home"></i> Home</a> </li>
 				<li><a href="demo.html"> 示例索引</a> </li>
-				<li class="active"> 模态窗体</li>
+				<li class="active"> 页签示例</li>
 			</ol>
-			<!-- InstanceEndEditable -->
+		<!-- InstanceEndEditable -->
 		</section>
 		<section class="content">
 		<!-- InstanceBeginEditable name="RegionContent" -->
-			<div class="box">
-				<div class="box-header with-border">
-					<h3 class="box-title">页标题</h3>
-					<div class="box-tools pull-right">
-						<button class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"><i class="fa fa-minus"></i></button>
-						<button class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip"><i class="fa fa-times"></i></button>
+			<!-- Custom Tabs -->
+			<div class="nav-tabs-custom">
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#tab_1" data-toggle="tab"><i class="fa fa-html5"></i> Html5</a></li>
+					<li><a href="#tab_2" data-toggle="tab"><i class="fa fa-css3"></i> CSS3</a></li>
+					<!-- Right TabButtons -->
+					<li class="pull-right"><a href="#" class="text-muted"><i class="fa fa-times"></i></a></li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane active" id="tab_1">
+						<blockquote>
+							<p>万维网的核心语言、标准通用标记语言下的一个应用超文本标记语言（HTML）的第五次重大修改。2014年10月29日，万维网联盟宣布，经过接近8年的艰苦努力，该标准规范终于制定完成。</p>
+							<small>这是一项推荐标准、外语原文：<cite title="Source Title">W3C Recommendation</cite></small> </blockquote>
+						<p>HTML5草案的前身名为 Web Applications 1.0，</p>
+						<p>于2004年被WHATWG提出，于2007年被W3C接纳，并成立了新的 HTML 工作团队。</p>
+						HTML 5 的第一份正式草案已于2008年1月22日公布。HTML5 仍处于完善之中。然而，大部分现代浏览器已经具备了某些 HTML5 支持。
+						2012年12月17日，万维网联盟（W3C）正式宣布凝结了大量网络工作者心血的HTML5规范已经正式定稿。根据W3C的发言稿称：“HTML5是开放的Web网络平台的奠基石。”
+						2013年5月6日， HTML 5.1正式草案公布。该规范定义了第五次重大版本，第一次要修订万维网的核心语言：超文本标记语言（HTML）。在这个版本中，新功能不断推出，以帮助Web应用程序的作者，努力提高新元素互操作性。
+						本次草案的发布，从2012年12月27日至今，进行了多达近百项的修改，包括HTML和XHTML的标签，相关的API、Canvas等，同时HTML5的图像img标签及svg也进行了改进，性能得到进一步提升。
+						支持Html5的浏览器包括Firefox（火狐浏览器），IE9及其更高版本，Chrome（谷歌浏览器），Safari，Opera等；国内的傲游浏览器（Maxthon），以及基于IE或Chromium（Chrome的工程版或称实验版）所推出的360浏览器、搜狗浏览器、QQ浏览器、猎豹浏览器等国产浏览器同样具备支持HTML5的能力。
+						在移动设备开发HTML5应用只有两种方法，要不就是全使用HTML5的语法，要不就是仅使用JavaScript引擎。
 					</div>
-				</div>
-				<div class="box-body">
-					<div class="alert alert-info alert-dismissable">
-						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-						<h4><i class="icon fa fa-info"></i> 系统提示</h4>
-						我们推荐你使用新版 Edge/Chrome/Safari/Firefox/Opera 浏览器。
+					<!-- /.tab-pane -->
+					<div class="tab-pane" id="tab_2">
+						<blockquote>
+							<p>CSS3是CSS技术的升级版本，CSS3语言开发是朝着模块化发展的。以前的规范作为一个模块实在是太庞大而且比较复杂，所以，把它分解为一些小的模块，更多新的模块也被加入进来。</p>
+							<small>这些模块包括： 盒子模型、列表模块、超链接方式 、语言模块 、背景和边框 、文字特效 、多栏布局等</small> </blockquote>
+						CSS即层叠样式表（Cascading StyleSheet）。 
+						在网页制作时采用层叠样式表技术，可以有效地对页面的布局、字体、颜色、背景和其它效果实现更加精确的控制。 
+						只要对相应的代码做一些简单的修改，就可以改变同一页面的不同部分，或者页数不同的网页的外观和格式。
+						CSS3是CSS技术的升级版本，CSS3语言开发是朝着模块化发展的。以前的规范作为一个模块实在是太庞大而且比较复杂，所以，把它分解为一些小的模块，更多新的模块也被加入进来。这些模块包括： 盒子模型、列表模块、超链接方式 、语言模块 、背景和边框 、文字特效 、多栏布局等。
 					</div>
+					<!-- /.tab-pane -->
 				</div>
-				<!-- /.box-body -->
-				<div class="box-footer">
-					功能和标注
-				</div>
+				<!-- /.tab-content -->
 			</div>
-			<!-- =========================================== -->
-			
-			<div class="row">
-				<div class="col-md-6">
-					<button class="btn btn-primary btn-lg" data-toggle="modal" href="#general">Open Form</button>
-				</div>
-				<div class="col-md-6">
-					<button class="btn btn-primary btn-lg" data-toggle="modal" href="#static">Modal Form</button>
-				</div>
-			</div>
-			<!-- InstanceEndEditable -->
+			<!-- nav-tabs-custom -->
+		<!-- InstanceEndEditable -->
 		</section>
 	</div>
 	<!-- /Content wrapper ============================== -->
-	<!-- InstanceBeginEditable name="RegionFooter" --> <!-- InstanceEndEditable -->
+	<!-- InstanceBeginEditable name="RegionFooter" -->
+	
+	<!-- InstanceEndEditable -->
 </div>
 <!-- /Site wrapper =================================== -->
-<!-- InstanceBeginEditable name="RegionModals" --> 
-<!-- Modal Definitions -->
-<div id="general" class="modal fade modal-general" tabindex="-10" data-width="760" >
-	<div class="modal-header">
-		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		<h4 class="modal-title"><i class="fa fa-wpforms"></i> 一般弹出窗体</h4>
-	</div>
-	<div class="modal-body">
-		<p>Grunt和所有grunt插件都是基于nodejs来运行的，如果你的电脑上没有nodejs，就去安装吧。安装nodejs非常简单，完全傻瓜式、下一步下一步下一步、的安装方式，这里不再赘述。去 https://nodejs.org/ 上，点击页面中那个绿色、大大的“install”按钮即可。</p>
-		<p>安装了nodejs之后，可以在你的控制台中输入“node -v”来查看nodejs的版本，也顺便试验nodejs是否安装成功。</p>
-		<p>注意两点。第一，grunt依赖于nodejs的v0.8.0及以上版本；第二，奇数版本号的版本被认为是不稳定的开发版，不过从官网上下载下来的应该都是偶数的稳定版。</p>
-	</div>
-	<div class="modal-footer">
-		<button type="button" class="btn btn-default pull-left" data-dismiss="modal"><i class="fa fa-close"></i> 关闭</button>
-		<button type="button" class="btn btn-primary"><i class="fa fa-save"></i> 保存</button>
-	</div>
-</div>
+<!-- InstanceBeginEditable name="RegionModals" -->
 
-<div id="static" class="modal fade modal-warning" tabindex="-10" data-backdrop="static" data-keyboard="false">
-	<div class="modal-header">
-		<h4 class="modal-title"><i class="fa fa-info"></i> 模态窗体</h4>
-	</div>
-	<div class="modal-body">
-		<p>问题来了，我们不仅是地球人，还是中国人，这意味着我们还需要多考虑一堵墙的问题。目前 Github 也被丧心病狂地墙掉了，作为一个常用中文的博客，不能被墙内访问，多么寂寞。</p>
-		<p>Gitcafe 也提供 Pages 服务，也官方支持 Jekyll，实在是一个尽职的备胎。</p>
-		<p>如果你还注册了个人域名，则要使用域名解析服务，将你的域名指向 Github 和 Gitcafe。</p>
-	</div>
-	<div class="modal-footer">
-		<button type="button" data-dismiss="modal" class="btn btn-outline">Cancel</button>
-		<button type="button" data-dismiss="modal" class="btn btn-outline">Continue Task</button>
-	</div>
-</div>
-<!-- /Modal Definitions --> 
 <!-- InstanceEndEditable -->
 <!-- ================================================= -->
-<!-- InstanceBeginEditable name="RegionScripts" --> 
+<!-- InstanceBeginEditable name="RegionScripts" -->
 <script src="../../ptn/js/jquery-3.1.0.min.js"></script> 
 <script src="../../ptn/js/jquery-ui.min.js"></script> 
 <script src="../../ptn/js/bootstrap.min.js"></script> 
-<script src="../../ptn/libs/bootstrap-modal/js/bootstrap-modalmanager.js"></script> 
-<script src="../../ptn/libs/bootstrap-modal/js/bootstrap-modal.js"></script> 
 <script src="../../ptn/libs/slimScroll/jquery.slimscroll.min.js"></script> 
 <script src='../../ptn/libs/fastclick/fastclick.min.js'></script> 
-<script src="../../ptn/js/app.min.js"></script> 
-<script>
-
-</script> 
+<script src="../../ptn/js/app.min.js"></script>
 <!-- InstanceEndEditable -->
 </body>
 <!-- InstanceEnd --></html>
