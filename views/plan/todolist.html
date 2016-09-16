@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'>
 <!-- InstanceBeginEditable name="RegionDoctitle" -->
-<title>Horbill | DemoIndex</title>
+<title>Horbill | Template</title>
 <link rel="stylesheet" type="text/css" href="../../ptn/css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="../../ptn/css/font-awesome.min.css" />
 <link rel="stylesheet" type="text/css" href="../../ptn/css/app.min.css" />
@@ -206,10 +206,10 @@
 				<li><a href="../layout.html"><i class="fa fa-dashboard"></i><span> 主控制台</span></a></li>
 				<li class="treeview"> <a href="#"><i class="fa fa-tasks"></i><span> 计划与总结</span><span class="label label-primary pull-right">6</span></a>
 					<ul class="treeview-menu">
-						<li><a href="../plan/todo.html"><i class="fa fa-caret-square-o-right"></i> 我的计划</a></li>
-						<li><a href="../plan/review.html"><i class="fa fa-caret-square-o-right"></i> 计划总结</a></li>
-						<li><a href="../plan/todolist.html"><i class="fa fa-caret-square-o-right"></i> 计划清单</a></li>
-						<li><a href="../plan/report.html"><i class="fa fa-caret-square-o-right"></i> 周期报告</a></li>
+						<li><a href="todo.html"><i class="fa fa-caret-square-o-right"></i> 我的计划</a></li>
+						<li><a href="review.html"><i class="fa fa-caret-square-o-right"></i> 计划总结</a></li>
+						<li><a href="todolist.html"><i class="fa fa-caret-square-o-right"></i> 计划清单</a></li>
+						<li><a href="report.html"><i class="fa fa-caret-square-o-right"></i> 周期报告</a></li>
 					</ul>
 				</li>
 				<li> <a href="../query/inventory.html"> <i class="fa fa-cubes"></i><span> 库存查询</span><small class="label pull-right bg-green">new</small></a></li>
@@ -237,7 +237,7 @@
 						<li><a href="#"><i class="fa fa-caret-square-o-right"></i> 用户管理</a> </li>
 					</ul>
 				</li>
-				<li><a href="demo.html"><i class="fa fa-question-circle-o"></i> <span> 使用帮助</span></a> </li>
+				<li><a href="../demo/demo.html"><i class="fa fa-question-circle-o"></i> <span> 使用帮助</span></a> </li>
 				<li class="header">快速链接</li>
 				<li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>公司网站</span></a> </li>
 				<li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>流程系统</span></a> </li>
@@ -252,116 +252,175 @@
 	<div class="content-wrapper">
 		<section class="content-header">
 		<!-- InstanceBeginEditable name="RegionContentHeader" -->
-			<h1> 空模板页 <small>用于继承的空模板页</small> </h1>
+			<h1> 计划清单<small>近期的所有计划任务清单</small></h1>
 			<ol class="breadcrumb">
-				<li><a href="../layout.html"><i class="fa fa-home"></i> Home</a> </li>
-				<li><a href="demo.html"> 示例索引</a> </li>
-				<li class="active"> 空模板页</li>
+				<li><a href="../layout.html"><i class="fa fa-home"></i> Home</a>
+				</li>
+				<li><a href="#"> 计划与总结</a>
+				</li>
+				<li class="active"> 计划清单</li>
 			</ol>
-		<!-- InstanceEndEditable -->
+			<!-- InstanceEndEditable -->
 		</section>
 		<section class="content">
 		<!-- InstanceBeginEditable name="RegionContent" -->
 			<div class="box">
 				<div class="box-header with-border">
-					<h3 class="box-title">页标题</h3>
+					<h3 class="box-title">按时间范围过滤</h3>
 					<div class="box-tools pull-right">
 						<button class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"><i class="fa fa-minus"></i></button>
 						<button class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip"><i class="fa fa-times"></i></button>
 					</div>
 				</div>
 				<div class="box-body">
-					<div class="alert alert-info alert-dismissable">
-						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-						<h4><i class="icon fa fa-info"></i> 系统提示</h4>
-						我们推荐你使用新版 Edge/Chrome/Safari/Firefox/Opera 浏览器。
-					</div>
 				</div>
 				<!-- /.box-body -->
-				<div class="box-footer">
-					功能和标注
-				</div>
 			</div>
 			<!-- =========================================== -->
 			
 			<div class="row">
-				<!-- block box A -->
-				<div class="col-md-3 col-sm-6 col-xs-12">
-					<div class="info-box bg-aqua">
-						<span class="info-box-icon"><i class="fa fa-bookmark-o"></i></span>
-						<div class="info-box-content">
-							<span class="info-box-text">模态窗体</span> <span class="info-box-number"><a href="demo-modal.html">Modal Forms</a> </span>
-							<div class="progress">
-								<div class="progress-bar" style="width: 80%">
+				<div class="col-md-12">
+					<ul class="timeline">
+						<!-- timeline time label -->
+						<li class="time-label"><span class="bg-blue">2016年8月12日</span></li>
+						<!-- timeline item -->
+						<li>
+							<i class="fa fa-phone bg-blue"></i>
+							<div class="timeline-item">
+								<span class="time"><i class="fa fa-check-square-o"></i> 已总结</span>
+								<h3 class="timeline-header">电话联络客户研发处副理，讨论BOM物料推荐</h3>
+								<div class="timeline-body">
+									演示平台可以将托管在 Coding 的项目代码进行部署运行，方便程序在公网测试和在线演示展示。
+									Coding 演示平台提供在线的公网运行环境和相关基础服务，如数据库服务，缓存服务，文件系统服务等。
+									用户可以在演示平台方便运行展示你的项目demo，包括 Web 网站，移动 H5 页面， 移动 App 后台等等。
+								</div>
+								<div class='timeline-footer'>
+									<a class="btn btn-primary btn-xs">修改总结</a>
+									<a class="btn btn-success btn-xs">评论</a>
 								</div>
 							</div>
-							<span class="progress-description"> 80% 完成度 </span>
-						</div>
-					</div>
-				</div>
-				<!-- block box B -->
-				<div class="col-md-3 col-sm-6 col-xs-12">
-					<div class="info-box bg-aqua">
-						<span class="info-box-icon"><i class="fa fa-bookmark-o"></i></span>
-						<div class="info-box-content">
-							<span class="info-box-text">页签模板</span> <span class="info-box-number"><a href="demo-tabs.html">blankTabs</a> </span>
-							<div class="progress">
-								<div class="progress-bar" style="width: 90%">
+						</li>
+						<!-- timeline item -->
+						<li>
+							<i class="fa fa-user bg-aqua"></i>
+							<div class="timeline-item">
+								<span class="time"><i class="fa fa-check-square"></i> 已完成</span>
+								<h3 class="timeline-header no-border"> 拜访上海客户群，电感新产品推广</h3>
+								<div class='timeline-footer'>
+									<a class="btn btn-warning btn-flat btn-xs">总结</a>
 								</div>
 							</div>
-							<span class="progress-description"> 90% 完成度 </span>
-						</div>
-					</div>
-				</div>
-				<!-- block box C -->
-				<div class="col-md-3 col-sm-6 col-xs-12">
-					<div class="info-box bg-aqua">
-						<span class="info-box-icon"><i class="fa fa-bookmark-o"></i></span>
-						<div class="info-box-content">
-							<span class="info-box-text">页签模板</span> <span class="info-box-number"><a href="blankTabs.html">blankTabs</a> </span>
-							<div class="progress">
-								<div class="progress-bar" style="width: 80%">
+						</li>
+						<!-- timeline item -->
+						<li>
+							<i class="fa fa-life-ring bg-red"></i>
+							<div class="timeline-item">
+								<span class="time"><i class="fa fa-exclamation-triangle"></i> 已逾期</span>
+								<h3 class="timeline-header no-border"> 处理客户投诉品质不良的问题</h3>
+								<div class='timeline-footer'>
+									<a class="btn btn-danger btn-flat btn-xs">放弃</a>
 								</div>
 							</div>
-							<span class="progress-description"> 80% 完成度 </span>
-						</div>
-					</div>
-				</div>
-				<!-- block box D -->
-				<div class="col-md-3 col-sm-6 col-xs-12">
-					<div class="info-box bg-aqua">
-						<span class="info-box-icon"><i class="fa fa-bookmark-o"></i></span>
-						<div class="info-box-content">
-							<span class="info-box-text">页签模板</span> <span class="info-box-number"><a href="blankTabs.html">blankTabs</a> </span>
-							<div class="progress">
-								<div class="progress-bar" style="width: 80%">
+						</li>
+						<!-- ===================================== -->
+						<!-- timeline time label -->
+						<li class="time-label"><span class="bg-blue">2016年8月11日</span></li>
+						<!-- timeline item -->
+						<li>
+							<i class="fa fa-firefox bg-maroon"></i>
+							<div class="timeline-item">
+								<span class="time"><i class="fa fa-check-square-o"></i> 已总结</span>
+								<h3 class="timeline-header">可以通过独立的域名 https://ide.coding.net 进入到 WebIDE</h3>
+								<div class="timeline-body">
+									WebIDE 可以编辑代码，实时自动保存编辑， 支持提交代码，Push/Pull 代码，将代码在终端运行起来。 同时右键操作文件树目录，还有项目文件，上传下载和预览功能，可以预览 图片，pdf，markdown, html 等文件。
+								</div>
+								<div class='timeline-footer'>
+									<a class="btn btn-primary btn-xs">修改总结</a>
+									<a class="btn btn-success btn-xs">评论</a>
 								</div>
 							</div>
-							<span class="progress-description"> 80% 完成度 </span>
-						</div>
-					</div>
+						</li>
+						<!-- timeline item -->
+						<li>
+							<i class="fa fa-edge bg-blue"></i>
+							<div class="timeline-item">
+								<span class="time"><i class="fa fa-check-square-o"></i> 已总结</span>
+								<h3 class="timeline-header">本章节主要介绍如何管理项目文件</h3>
+								<div class="timeline-body">
+									项目文件中心支持对文件的上传、下载、协同编辑、在线预览、公开分享、删除等功能，每个文件都拥有动态和历史版本，项目成员可以在文件下评论和交流，并通过下载查看旧的文件版本。
+									<div class="direct-chat-messages">
+                    <!-- Message. Default to the left -->
+                    <div class="direct-chat-msg">
+                      <div class='direct-chat-info clearfix'>
+                        <span class='direct-chat-name pull-left'>Johan Cruyff</span>
+                        <span class='direct-chat-timestamp pull-right'>23 Jan 2:00 pm</span>
+                      </div><!-- /.direct-chat-info -->
+                      <img class="direct-chat-img" src="../../ptn/img/user5-128x128.jpg" alt="message user image" /><!-- /.direct-chat-img -->
+                      <div class="direct-chat-text">
+                        下周务必要安排时间与客户见面
+                      </div><!-- /.direct-chat-text -->
+                    </div><!-- /.direct-chat-msg -->
+                    <!-- Message to the right -->
+                    <div class="direct-chat-msg right">
+                      <div class='direct-chat-info clearfix'>
+                        <span class='direct-chat-name pull-right'>Janet</span>
+                        <span class='direct-chat-timestamp pull-left'>23 Jan 2:05 pm</span>
+                      </div><!-- /.direct-chat-info -->
+                      <img class="direct-chat-img" src="../../ptn/img/user4-128x128.jpg" alt="message user image" /><!-- /.direct-chat-img -->
+                      <div class="direct-chat-text">
+                        时间已经安排，但是上个月的出差费用到底什么时候批啊？
+                      </div><!-- /.direct-chat-text -->
+                    </div><!-- /.direct-chat-msg -->                    
+                  </div><!--/.direct-chat-messages-->
+								</div>
+								<div class='timeline-footer'>
+									<a class="btn btn-primary btn-xs">修改总结</a>
+									<a class="btn btn-success btn-xs">评论</a>
+								</div>
+							</div>
+						</li>
+						<!-- timeline item -->
+						<li>
+							<i class="fa fa-modx bg-purple"></i>
+							<div class="timeline-item">
+								<span class="time"><i class="fa fa-check-square-o"></i> 已总结</span>
+								<h3 class="timeline-header">本手册主要描述 Coding.net 旗下演示平台的相关功能说明</h3>
+								<div class="timeline-body">
+									演示平台可以将托管在 Coding 的项目代码进行部署运行，方便程序在公网测试和在线演示展示。
+									Coding 演示平台提供在线的公网运行环境和相关基础服务，如数据库服务，缓存服务，文件系统服务等。
+									用户可以在演示平台方便运行展示你的项目demo，包括 Web 网站，移动 H5 页面， 移动 App 后台等等。
+								</div>
+								<div class='timeline-footer'>
+									<a class="btn btn-primary btn-xs">修改总结</a>
+									<a class="btn btn-success btn-xs">评论</a>
+								</div>
+							</div>
+						</li>
+						<!-- ===================================== -->
+						<!-- END timeline item -->
+						<li>
+							<i class="fa fa-clock-o bg-gray"></i>
+						</li>
+					</ul>
 				</div>
 			</div>
-
-		<!-- InstanceEndEditable -->
+			<!-- InstanceEndEditable -->
 		</section>
 	</div>
 	<!-- /Content wrapper ============================== -->
 	<!-- InstanceBeginEditable name="RegionFooter" -->
-	
 	<!-- InstanceEndEditable -->
 </div>
 <!-- /Site wrapper =================================== -->
 <!-- InstanceBeginEditable name="RegionModals" -->
-
 <!-- InstanceEndEditable -->
 <!-- ================================================= -->
 <!-- InstanceBeginEditable name="RegionScripts" -->
-<script src="../../ptn/js/jquery-3.1.0.min.js"></script> 
-<script src="../../ptn/js/jquery-ui.min.js"></script> 
-<script src="../../ptn/js/bootstrap.min.js"></script> 
-<script src="../../ptn/libs/slimScroll/jquery.slimscroll.min.js"></script> 
-<script src='../../ptn/libs/fastclick/fastclick.min.js'></script> 
+<script src="../../ptn/js/jquery-3.1.0.min.js"></script>
+<script src="../../ptn/js/jquery-ui.min.js"></script>
+<script src="../../ptn/js/bootstrap.min.js"></script>
+<script src="../../ptn/libs/slimScroll/jquery.slimscroll.min.js"></script>
+<script src='../../ptn/libs/fastclick/fastclick.min.js'></script>
 <script src="../../ptn/js/app.min.js"></script>
 <!-- InstanceEndEditable -->
 </body>

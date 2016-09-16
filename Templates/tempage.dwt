@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="zh-CN">
-
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,14 +18,14 @@
 <!-- Site wrapper ==================================== -->
 <div class="wrapper">
 	<header class="main-header">
-		<!-- Logo --> 
-		<a href="../views/layout.html" class="logo"> 
-			<span class="logo-mini"><i class="fa fa-home"></i></span> 
+		<!-- Logo -->
+		<a href="../views/layout.html" class="logo">
+			<span class="logo-mini"><i class="fa fa-home"></i></span>
 			<span class="logo-lg">Hornbill</span>
-		</a> 
+		</a>
 		<!-- Header Navbar -->
-		<nav class="navbar navbar-static-top" role="navigation"> 
-			<!-- Sidebar toggle button--> 
+		<nav class="navbar navbar-static-top" role="navigation">
+			<!-- Sidebar toggle button-->
 			<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button"><span class="sr-only">Toggle navigation</span></a>
 			<div class="navbar-custom-menu">
 				<ul class="nav navbar-nav">
@@ -34,7 +33,7 @@
 					<li class="dropdown messages-menu"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope-o"></i><span class="label label-success">3</span></a>
 						<ul class="dropdown-menu">
 							<li class="header">你有3条内部消息尚未处理！</li>
-							<li> 
+							<li>
 								<!-- inner menu: contains the actual data -->
 								<ul class="menu">
 									<li>
@@ -74,7 +73,7 @@
 					<li class="dropdown notifications-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-bell-o"></i> <span class="label label-warning">12</span> </a>
 						<ul class="dropdown-menu">
 							<li class="header">你有12条提醒事项</li>
-							<li> 
+							<li>
 								<!-- inner menu: contains the actual data -->
 								<ul class="menu">
 									<li> <a href="#"> <i class="fa fa-users text-aqua"></i> 3位新成员在今天加入团队 </a> </li>
@@ -91,10 +90,10 @@
 					<li class="dropdown tasks-menu"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-flag-o"></i> <span class="label label-danger">6</span> </a>
 						<ul class="dropdown-menu">
 							<li class="header">您有6件待完成的团队任务</li>
-							<li> 
+							<li>
 								<!-- inner menu: contains the actual data -->
 								<ul class="menu">
-									<li><!-- Task item --> 
+									<li><!-- Task item -->
 										<a href="#">
 											<h3> 前端用户界面设计 <small class="pull-right">80%</small> </h3>
 											<div class="progress xs">
@@ -104,7 +103,7 @@
 											</div>
 										</a> </li>
 									<!-- end task item -->
-									<li><!-- Task item --> 
+									<li><!-- Task item -->
 										<a href="#">
 											<h3> 调整可配置的主题色调 <small class="pull-right">50%</small> </h3>
 											<div class="progress xs">
@@ -114,7 +113,7 @@
 											</div>
 										</a> </li>
 									<!-- end task item -->
-									<li><!-- Task item --> 
+									<li><!-- Task item -->
 										<a href="#">
 											<h3> 主要功能模组菜单的设计 <small class="pull-right">60%</small> </h3>
 											<div class="progress xs">
@@ -124,7 +123,7 @@
 											</div>
 										</a> </li>
 									<!-- end task item -->
-									<li><!-- Task item --> 
+									<li><!-- Task item -->
 										<a href="#">
 											<h3> 服务端基础框架构建 <small class="pull-right">12%</small> </h3>
 											<div class="progress xs">
@@ -178,7 +177,7 @@
 
 	<!-- =============================================== -->
 	<!-- Left side content -->
-	<aside class="main-sidebar"> 
+	<aside class="main-sidebar">
 		<!-- sidebar -->
 		<section class="sidebar">
 			<!-- Sidebar user panel -->
@@ -200,19 +199,21 @@
 					</span>
 				</div>
 			</form>
-			<!-- /.search form --> 
+			<!-- /.search form -->
 			<!-- sidebar menu: -->
 			<ul class="sidebar-menu">
 				<li class="header">主菜单</li>
-				<li><a href="#"><i class="fa fa-dashboard"></i> <span> 主控制台</span></a> </li>
-				<li class="treeview"> <a href="#"><i class="fa fa-tasks"></i> <span> 计划和总结</span><span class="label label-primary pull-right">6</span> </a>
+				<li><a href="../views/layout.html"><i class="fa fa-dashboard"></i><span> 主控制台</span></a></li>
+				<li class="treeview"> <a href="#"><i class="fa fa-tasks"></i><span> 计划与总结</span><span class="label label-primary pull-right">6</span></a>
 					<ul class="treeview-menu">
-						<li><a href="#"><i class="fa fa-caret-square-o-right"></i> 我的计划</a> </li>
-						<li><a href="#"><i class="fa fa-caret-square-o-right"></i> 每周报告</a> </li>
+						<li><a href="../views/plan/todo.html"><i class="fa fa-caret-square-o-right"></i> 我的计划</a></li>
+						<li><a href="../views/plan/review.html"><i class="fa fa-caret-square-o-right"></i> 计划总结</a></li>
+						<li><a href="../views/plan/todolist.html"><i class="fa fa-caret-square-o-right"></i> 计划清单</a></li>
+						<li><a href="../views/plan/report.html"><i class="fa fa-caret-square-o-right"></i> 周期报告</a></li>
 					</ul>
 				</li>
-				<li> <a href="../views/query/inventory.html"> <i class="fa fa-cubes"></i> <span> 库存查询</span> <small class="label pull-right bg-green">new</small> </a> </li>
-				<li> <a href="../views/query/guidance.html"> <i class="fa fa-cc"></i> <span> 指导价查询</span> <small class="label pull-right bg-green">new</small> </a> </li>
+				<li> <a href="../views/query/inventory.html"> <i class="fa fa-cubes"></i><span> 库存查询</span><small class="label pull-right bg-green">new</small></a></li>
+				<li> <a href="../views/query/guidance.html"> <i class="fa fa-cc"></i><span> 指导价查询</span><small class="label pull-right bg-green">new</small></a></li>
 				<li class="treeview"> <a href="#"> <i class="fa fa-users"></i> <span> 客户档案</span><i class="fa fa-angle-left pull-right"></i> </a>
 					<ul class="treeview-menu">
 						<li><a href="../views/customer/custprofile.html"><i class="fa fa-caret-square-o-right"></i> 我的客户</a> </li>
@@ -243,10 +244,10 @@
 				<li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>ERP接口</span></a> </li>
 			</ul>
 		</section>
-		<!-- /.sidebar --> 
+		<!-- /.sidebar -->
 	</aside>
 
-	<!-- =============================================== --> 
+	<!-- =============================================== -->
 	<!-- Content Wrapper. Contains page content -->
 	<div class="content-wrapper">
 		<section class="content-header">
@@ -282,9 +283,9 @@
 				</div>
 			</div>
 			<!-- =========================================== -->
-			
+
 			<div class="row">
-			
+				
 			</div>
 
 		<!-- TemplateEndEditable -->
@@ -292,20 +293,20 @@
 	</div>
 	<!-- /Content wrapper ============================== -->
 	<!-- TemplateBeginEditable name="RegionFooter" -->
-	
+		
 	<!-- TemplateEndEditable -->
 </div>
 <!-- /Site wrapper =================================== -->
 <!-- TemplateBeginEditable name="RegionModals" -->
-
+	
 <!-- TemplateEndEditable -->
 <!-- ================================================= -->
 <!-- TemplateBeginEditable name="RegionScripts" -->
-<script src="../ptn/js/jquery-3.1.0.min.js"></script> 
-<script src="../ptn/js/jquery-ui.min.js"></script> 
-<script src="../ptn/js/bootstrap.min.js"></script> 
-<script src="../ptn/libs/slimScroll/jquery.slimscroll.min.js"></script> 
-<script src='../ptn/libs/fastclick/fastclick.min.js'></script> 
+<script src="../ptn/js/jquery-3.1.0.min.js"></script>
+<script src="../ptn/js/jquery-ui.min.js"></script>
+<script src="../ptn/js/bootstrap.min.js"></script>
+<script src="../ptn/libs/slimScroll/jquery.slimscroll.min.js"></script>
+<script src='../ptn/libs/fastclick/fastclick.min.js'></script>
 <script src="../ptn/js/app.min.js"></script>
 <!-- TemplateEndEditable -->
 </body>
